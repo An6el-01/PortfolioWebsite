@@ -40,6 +40,8 @@ public class ExperienceController : ControllerBase
         experience.Date = updatedExperience.Date;
         experience.Description = updatedExperience.Description;
         experience.Role = updatedExperience.Role;
+        experience.Type = updatedExperience.Type;
+        experience.ImageUrl = updatedExperience.ImageUrl;
 
         return NoContent(); 
     }

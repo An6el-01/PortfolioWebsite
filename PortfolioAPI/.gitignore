@@ -1,0 +1,19 @@
+# Build artifacts
+bin/
+obj/
+
+# Database files
+*.db
+*.db-shm
+*.db-wal
+
+# Entity Framework Migrations
+Migrations/
+
+# IDE-specific files (for VSCode, Rider, etc.)
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
