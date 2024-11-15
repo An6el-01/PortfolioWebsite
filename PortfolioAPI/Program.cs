@@ -24,6 +24,7 @@ builder.Services.AddCors(options =>
 });
 
 builder.Services.AddControllers();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -33,7 +34,25 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<PortfolioDbContext>();
+
+    try
+    {
+        Console.WriteLine("Applying migrations...");
+        dbContext.Database.Migrate();
+        Console.WriteLine("Running seeder...");
+        DatabaseSeeder.Seed(dbContext);
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"An error occurred while seeding the database: {ex.Message}");
+    }
+}
+
 app.UseCors("AllowReactApp");
+app.UseStaticFiles();
 
 app.UseAuthentication();
 app.MapControllers();

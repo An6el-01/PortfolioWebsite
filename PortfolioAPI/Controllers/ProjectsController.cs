@@ -1,39 +1,55 @@
 using Microsoft.AspNetCore.Mvc;
+using PortfolioAPI.Data;
 using PortfolioAPI.Models;
 using System.Collections.Generic;
+using System.Linq;
 
-[ApiController]
+namespace PortfolioAPI.Controllers{
+    [ApiController]
 [Route("api/[controller]")]
-public class ProjectController : ControllerBase
+public class ProjectsController : ControllerBase
 {
-    private static List<Project> projects = new List<Project>();
+    private readonly PortfolioDbContext _context;
+
+    public ProjectsController(PortfolioDbContext context)
+    {
+        _context = context;
+    }
 
     [HttpGet]
     public ActionResult<IEnumerable<Project>> GetAllProjects()
     {
+        var projects = _context.Projects.ToList();
         return Ok(projects);
     }
 
     [HttpGet("{id}")]
     public ActionResult<Project> GetProject(int id)
     {
-        var project = projects.Find( p => p.Id == id);
-        if (project == null) return NotFound();
+        var project = _context.Projects.Find(id);
+        if (project == null)
+        {
+            return NotFound();
+        }
         return Ok(project);
     }
 
     [HttpPost]
     public ActionResult<Project> AddProject(Project project)
     {
-        projects.Add(project);
+        _context.Projects.Add(project);
+        _context.SaveChanges();
         return CreatedAtAction(nameof(GetProject), new { id = project.Id }, project);
     }
 
     [HttpPut("{id}")]
     public ActionResult UpdateProject(int id, Project updatedProject)
     {
-        var project = projects.Find(p => p.Id == id);
-        if (project == null) return NotFound();
+        var project = _context.Projects.Find(id);
+        if (project == null)
+        {
+            return NotFound();
+        }
 
         project.Name = updatedProject.Name;
         project.Description = updatedProject.Description;
@@ -41,16 +57,29 @@ public class ProjectController : ControllerBase
         project.RepositoryUrl = updatedProject.RepositoryUrl;
         project.TechStack = updatedProject.TechStack;
 
+        _context.SaveChanges();
         return NoContent();
     }
 
     [HttpDelete("{id}")]
     public ActionResult DeleteProject(int id)
     {
-        var project = projects.Find(p =>p.Id == id);
-        if (project == null) return NotFound();
-        
-        projects.Remove(project);
+        var project = _context.Projects.Find(id);
+        if (project == null)
+        {
+            return NotFound();
+        }
+
+        _context.Projects.Remove(project);
+        _context.SaveChanges();
         return NoContent();
     }
+    [HttpGet("test")]
+public IActionResult Test()
+{
+    return Ok("ProjectsController is working!");
+}
+
+}
+
 }

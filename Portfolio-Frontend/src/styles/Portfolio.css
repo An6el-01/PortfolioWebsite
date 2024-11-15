@@ -1,0 +1,39 @@
+.projects-section, .experiences-section, .techstack-section {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .projects-grid, .experiences-grid, .techstack-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .project-card, .experience-card, .techstack-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 1rem;
+    transition: transform 0.2s ease;
+  }
+  
+  .project-card:hover, .experience-card:hover, .techstack-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project-image, .experience-image, .techstack-icon {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

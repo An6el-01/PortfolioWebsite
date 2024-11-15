@@ -1,11 +1,77 @@
 {
   "Version": 1,
-  "Hash": "sInUwN2xKoQj8orfMSdWiP/5YA1OeRajC0JI+Krl1ZU=",
+  "Hash": "uAj0Cm1W3BfNcMJwNXFxskKfCjqAoP9MZJ839WHMAmo=",
   "Source": "PortfolioAPI",
   "BasePath": "_content/PortfolioAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "PortfolioAPI\\wwwroot",
+      "Source": "PortfolioAPI",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
+      "BasePath": "_content/PortfolioAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\ComingSoon.jpg",
+      "SourceId": "PortfolioAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
+      "BasePath": "_content/PortfolioAPI",
+      "RelativePath": "images/ComingSoon.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\ComingSoon.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\MockUpControlPanel.jpeg",
+      "SourceId": "PortfolioAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
+      "BasePath": "_content/PortfolioAPI",
+      "RelativePath": "images/MockUpControlPanel.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\MockUpControlPanel.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\MockUpWorkoutLibrary.jpeg",
+      "SourceId": "PortfolioAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
+      "BasePath": "_content/PortfolioAPI",
+      "RelativePath": "images/MockUpWorkoutLibrary.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\MockUpWorkoutLibrary.jpeg"
+    }
+  ]
 }

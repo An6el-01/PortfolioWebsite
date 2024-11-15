@@ -1,18 +1,33 @@
 import axios from 'axios';
 
-const API_URL = 'API URL';
+const API_URL = 'http://localhost:5015/api';
 
 export const fetchExperiences = async () => {
-    const response = await axios.get(`${API_URL}/experience`);
-    return response.data;
+    try{
+        const response = await axios.get(`${API_URL}/experience`);
+        return response.data;
+    }catch (error){
+        console.error("Error fetching experiences: ", error)
+    }
+
 };
 
 export const fetchProjects = async () => {
-    const response = await axios.get(`${API_URL}/project`);
-    return response.data;
+    try{
+        const response = await axios.get(`${API_URL}/projects`);
+        return response.data;
+    }catch (error){
+        console.error("Error fetching projects: ", error);
+    }
+  
 }
 
 export const fetchTechStack = async () => {
-    const response = await axios.get(`${API_URL}/tech-stack`);
-    return response.data;
+    try{
+        const response = await axios.get(`${API_URL}/techstack`);
+        return response.data;
+    }catch (error) {
+        console.error("Error fetching tech stack: ", error);
+    }
+    
 }
