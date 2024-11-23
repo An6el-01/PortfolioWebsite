@@ -11,7 +11,7 @@ namespace PortfolioAPI.Data
             context.Database.EnsureCreated();
 
             // Add Projects if none exists
-            if(!context.Projects.Any())
+            if (!context.Projects.Any())
             {
                 Console.WriteLine("Adding projects to the database...");
                 context.Projects.AddRange(new List<Project>
@@ -32,37 +32,82 @@ namespace PortfolioAPI.Data
                         RepositoryUrl = "https://github.com/An6el-01/TheDailyDrive_Website",
                         TechStack = "CSS, PHP, JavaScript, React, Laravel, MySQL."
                     },
-                     new Project
-                     {
-                        Name = " AI Fitness App",
+                    new Project
+                    {
+                        Name = "AI Fitness App",
                         Description = "A mobile application designed to help users structure their workouts and diet plans based on their fitness level, goals, and time frame. It offers personalized guidance through AI, making fitness accessible and affordable.",
                         ImageUrl = "http://localhost:5015/images/ComingSoon.jpg",
                         RepositoryUrl = "https://github.com/An6el-01/AI_Fitness",
                         TechStack = "Flutter (Dart), JavaScript, Node.js, MongoDB, REST Api.",
-                     },
-                     new Project 
-                     {
+                    },
+                    new Project
+                    {
                         Name = "The Workout Library",
-                        Description = "Built a workout management app for a client to manage his clients workouts and fitness progress, optimized for multi-device compatibility.",
+                        Description = "Built a workout management app for a client to manage his clients' workouts and fitness progress, optimized for multi-device compatibility.",
                         ImageUrl = "http://localhost:5015/images/MockUpWorkoutLibrary.jpeg",
                         RepositoryUrl = "https://github.com/An6el-01/WorkoutLibrary",
                         TechStack = "HTML, CSS, JavaScript, C#, ASP.NET Core, SQL Server, Azure.",
-                     },
-                     new Project
-                     {
+                    },
+                    new Project
+                    {
                         Name = "Decentralized Control Panel",
                         Description = "Developed an IoT control panel application for secure, real-time device management. Optimizing energy usage and automation of devices across my home.",
                         ImageUrl = "http://localhost:5015/images/MockUpControlPanel.jpeg",
                         RepositoryUrl = "https://github.com/An6el-01/RaspberryPi-IoT",
-                        TechStack = "JavaScript, Python,React Native, Node.js, AWS."
-                     }
+                        TechStack = "JavaScript, Python, React Native, Node.js, AWS."
+                    }
                 });
                 context.SaveChanges();
-                Console.WriteLine("Projects Successfully added.");
-            }else
-            {
-                Console.WriteLine("Projects already exist in the database.");    
+                Console.WriteLine("Projects successfully added.");
             }
+            else
+            {
+                Console.WriteLine("Projects already exist in the database.");
+            }
+
+            // Seed TechStacks
+            var techStackSeedData = new List<TechStack>
+            {
+                new TechStack { Name = "React", Icon = "http://localhost:5015/images/ReactIcon.png", Type = "Framework" },
+                new TechStack { Name = "React Native", Icon = "http://localhost:5015/images/ReactNativeIcon.png", Type = "Framework" },
+                new TechStack { Name = "ASP.NET Core", Icon = "http://localhost:5015/images/ASP.png", Type = "Framework" },
+                new TechStack { Name = "Node.js", Icon = "http://localhost:5015/images/node.png", Type = "Runtime" },
+                new TechStack { Name = "PHP", Icon = "http://localhost:5015/images/php.png", Type = "Programming Language" },
+                new TechStack { Name = "Flutter", Icon = "http://localhost:5015/images/flutter.png", Type = "Framework" },
+                new TechStack { Name = "JavaScript", Icon = "http://localhost:5015/images/JavaScript.png", Type = "Programming Language" },
+                new TechStack { Name = "TypeScript", Icon = "http://localhost:5015/images/TypeScript.png", Type = "Programming Language" },
+                new TechStack { Name = "Python", Icon = "http://localhost:5015/images/Python.png", Type = "Programming Language" },
+                new TechStack { Name = "C#", Icon = "http://localhost:5015/images/C_sharp.png", Type = "Programming Language" },
+                new TechStack { Name = "HTML", Icon = "http://localhost:5015/images/HTML.png", Type = "Markup Language" },
+                new TechStack { Name = "CSS", Icon = "http://localhost:5015/images/CSS.png", Type = "Stylesheet Language" },
+                new TechStack { Name = "SQLite", Icon = "http://localhost:5015/images/SQLite.png", Type = "Database" },
+                new TechStack { Name = "MongoDB", Icon = "http://localhost:5015/images/MongoDB.png", Type = "Database" },
+                new TechStack { Name = "MySQL", Icon = "http://localhost:5015/images/mysql.png", Type = "Database" },
+                new TechStack { Name = "Docker", Icon = "http://localhost:5015/images/docker.png", Type = "Containerization" },
+                new TechStack { Name = "Google Cloud", Icon = "http://localhost:5015/images/googleCloud.png", Type = "Cloud Service" },
+                new TechStack { Name = "Azure", Icon = "http://localhost:5015/images/Azure.png", Type = "Cloud Service" },
+                new TechStack { Name = "AWS", Icon = "http://localhost:5015/images/AWS.png", Type = "Cloud Service" }
+            };
+
+            foreach (var techStackData in techStackSeedData)
+            {
+                var existingTechStack = context.TechStacks.FirstOrDefault(ts => ts.Name == techStackData.Name);
+
+                if (existingTechStack != null)
+                {
+                    // Update existing entry
+                    existingTechStack.Type = techStackData.Type;
+                    existingTechStack.Icon = techStackData.Icon; // Update the icon field
+                }
+                else
+                {
+                    // Add new entry
+                    context.TechStacks.Add(techStackData);
+                }
+            }
+
+            context.SaveChanges();
+            Console.WriteLine("TechStacks updated or added successfully.");
         }
     }
 }

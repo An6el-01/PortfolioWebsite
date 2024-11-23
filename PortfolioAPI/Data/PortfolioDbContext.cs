@@ -23,7 +23,7 @@ namespace PortfolioAPI.Data
             .IsUnique();
 
             modelBuilder.Entity<TechStack>()
-            .HasIndex(p => new { p.Name })
+            .HasIndex(p => new { p.Name, p.Type })
             .IsUnique();
         }
     }
