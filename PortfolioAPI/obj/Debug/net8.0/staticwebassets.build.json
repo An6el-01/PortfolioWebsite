@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "v/XNEZpkYGPzPFIVDtbPPnwD8Sn/+4/qYSM2J5IOdGA=",
+  "Hash": "uR3n0bMTWDA+GJUNp1KdtvVwAwgfyBDvsp4rgkZUfnw=",
   "Source": "PortfolioAPI",
   "BasePath": "_content/PortfolioAPI",
   "Mode": "Default",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Azure.png"
+    },
+    {
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\BrightNetworkLogo.png",
+      "SourceId": "PortfolioAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
+      "BasePath": "_content/PortfolioAPI",
+      "RelativePath": "images/BrightNetworkLogo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\BrightNetworkLogo.png"
     },
     {
       "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\C_sharp.png",
@@ -150,6 +169,25 @@
       "OriginalItemSpec": "wwwroot\\images\\docker.png"
     },
     {
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\EntityLogo.png",
+      "SourceId": "PortfolioAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
+      "BasePath": "_content/PortfolioAPI",
+      "RelativePath": "images/EntityLogo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\EntityLogo.png"
+    },
+    {
       "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\flutter.png",
       "SourceId": "PortfolioAPI",
       "SourceType": "Discovered",
@@ -186,6 +224,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\googleCloud.png"
+    },
+    {
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\hsbcLogo.png",
+      "SourceId": "PortfolioAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
+      "BasePath": "_content/PortfolioAPI",
+      "RelativePath": "images/hsbcLogo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\hsbcLogo.png"
     },
     {
       "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\HTML.png",
@@ -340,6 +397,25 @@
       "OriginalItemSpec": "wwwroot\\images\\php.png"
     },
     {
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\PostgreSQL.png",
+      "SourceId": "PortfolioAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
+      "BasePath": "_content/PortfolioAPI",
+      "RelativePath": "images/PostgreSQL.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\PostgreSQL.png"
+    },
+    {
       "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\python.png",
       "SourceId": "PortfolioAPI",
       "SourceType": "Discovered",
@@ -433,6 +509,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\TypeScript.png"
+    },
+    {
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\UniversityOfChesterLogo.png",
+      "SourceId": "PortfolioAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
+      "BasePath": "_content/PortfolioAPI",
+      "RelativePath": "images/UniversityOfChesterLogo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\UniversityOfChesterLogo.png"
+    },
+    {
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\ZebraTechnologiesLogo.png",
+      "SourceId": "PortfolioAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
+      "BasePath": "_content/PortfolioAPI",
+      "RelativePath": "images/ZebraTechnologiesLogo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\ZebraTechnologiesLogo.png"
     }
   ]
 }
