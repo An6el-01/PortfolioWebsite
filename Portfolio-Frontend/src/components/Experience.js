@@ -1,21 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import { fetchExperiences } from '../services/api';
+import '../styles/Experience.css'; // New CSS file for styling
 
 function Experience() {
   const [experiences, setExperiences] = useState([]);
   const [filteredExperiences, setFilteredExperiences] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [filter, setFilter] = useState("Work");
+  const [filter, setFilter] = useState('Work');
 
   useEffect(() => {
     const getExperiences = async () => {
-      try{
+      try {
         const data = await fetchExperiences();
         setExperiences(data);
-        setFilteredExperiences(data.Filter((exp) => exp.type === "Work"));
-      }catch (error){
-        console.error("Error fetching experiences: ", error);
-      }finally {
+        setFilteredExperiences(data.filter((exp) => exp.type === 'Work'));
+      } catch (error) {
+        console.error('Error fetching experiences: ', error);
+      } finally {
         setLoading(false);
       }
     };
@@ -30,44 +31,42 @@ function Experience() {
   if (loading) {
     return <div>Loading Experiences...</div>;
   }
+
   return (
-    <div className="experiences-section">
-      <div className="filter-section">
+    <section className="experience-container">
+      {/* Toggle Buttons */}
+      <div className="toggle-section">
         <button
-          className={filter === "Work" ? "active-filter" : ""}
-          onClick={() => setFilter("Work")}
+          className={filter === 'Work' ? 'active' : ''}
+          onClick={() => setFilter('Work')}
         >
           Work
         </button>
         <button
-          className={filter === "Studies" ? "active-filter" : ""}
-          onClick={() => setFilter("Studies")}
+          className={filter === 'Studies' ? 'active' : ''}
+          onClick={() => setFilter('Studies')}
         >
-          Studies
+          Education
         </button>
       </div>
-      <div className="experiences-grid">
-        {filteredExperiences.length > 0 ? (
-          filteredExperiences.map((experience) => (
-            <div key={experience.id} className="experience-card">
-              <img
-                src={experience.imageUrl}
-                alt={experience.name}
-                className="experience-image"
-              />
-              <h3>{experience.name}</h3>
-              <p>{experience.date}</p>
-              <p>
-                <strong>Role:</strong> {experience.role}
-              </p>
-              <p>{experience.description}</p>
+
+      {/* Timeline */}
+      <div className="timeline-container">
+        {filteredExperiences.map((experience, index) => (
+          <div key={experience.id} className="timeline-item">
+            <div className="timeline-icon">
+              <img src={experience.imageUrl} alt={experience.name} />
             </div>
-          ))
-        ) : (
-          <p>No experiences available for {filter}.</p> // Fallback message
-        )}
+            <div className="timeline-content">
+              <p className="timeline-date">{experience.date}</p>
+              <h3 className="timeline-title">{experience.name}</h3>
+              <p className="timeline-role">{experience.role}</p>
+              <p className="timeline-description">{experience.description}</p>
+            </div>
+          </div>
+        ))}
       </div>
-    </div>
+    </section>
   );
 }
 

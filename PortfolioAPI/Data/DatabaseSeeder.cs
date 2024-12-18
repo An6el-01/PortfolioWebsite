@@ -10,6 +10,7 @@ namespace PortfolioAPI.Data
         {
             context.Database.EnsureCreated();
 
+
             // Add Projects if none exists
             if (!context.Projects.Any())
             {
@@ -114,7 +115,7 @@ namespace PortfolioAPI.Data
                 //Work Experiences
                 new Experience{
                     Name= "Bright Network Internship Experience UK: Technology",
-                    Role= "Internship",
+                    Role= "Intern",
                     Date= "29 June 2024 - 1 July 2024",
                     Description= "Gained skills in technology through hackathon-style projects with Google",
                     Type="Work",
