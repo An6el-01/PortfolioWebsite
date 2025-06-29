@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import '../styles/TechStackCarousel.css';
 import { fetchTechStack } from '../services/api';
 
 function TechStack () {
     const [techStacks, setTechStacks] = useState([]);
     const [loading, setLoading] = useState(true);
-    const [selectedType, setSelectedType] = useState('');
 
     useEffect(() => {
         const getTechStack = async () => {
@@ -20,52 +20,31 @@ function TechStack () {
         getTechStack();
     }, []);
 
-    const uniqueTypes = [...new Set(techStacks.map((stack) => stack.type))];
-
-    const filteredStacks = selectedType 
-    ? techStacks.filter((stack) =>  stack.type === selectedType) 
-    : techStacks;
-
     if (loading){
         return <p>Loading TechStack...</p>
     }
+    // Duplicate the array for seamless infinite scroll
+    const carouselItems = techStacks.concat(techStacks);
     return (
-        <div>
-            <h2>Tech Stack</h2>
-
-            {/* Filter Dropdown */}
-            <div className="filter-section">
-                <label htmlFor="typeFilter">Filter by Type:</label>
-                <select
-                    id="typeFilter"
-                    value={selectedType}
-                    onChange={(e) => setSelectedType(e.target.value)}
-                >
-                    <option value="">All</option>
-                    {uniqueTypes.map((type) => (
-                        <option key={type} value={type}>
-                            {type}
-                        </option>
+        <section id="techstack">
+            <h2 className="section-title">Tech Stack</h2>
+            <div className="techstack-carousel-wrapper">
+                <div className="techstack-carousel css-infinite-scroll">
+                    {carouselItems.map((tech, idx) => (
+                        <div key={tech.id + '-' + idx} className="techstack-carousel-card glass-card">
+                            <img
+                                src={tech.icon}
+                                alt={tech.name}
+                                className="techstack-carousel-icon"
+                            />
+                            <p className="techstack-carousel-name">{tech.name}</p>
+                            <span className="techstack-carousel-type">{tech.type}</span>
+                        </div>
                     ))}
-                </select>
+                </div>
             </div>
-
-            {/* Display Tech Stacks */}
-            <ul className="techstack-grid">
-                {filteredStacks.map((tech) => (
-                    <li key={tech.id} className="techstack-item">
-                        <img
-                            src={tech.icon}
-                            alt={tech.name}
-                            className="techstack-icon"
-                        />
-                        <p>{tech.name}</p>
-                        <span className="techstack-type">{tech.type}</span>
-                    </li>
-                ))}
-            </ul>
-        </div>
+        </section>
     );
 }
 
-export default TechStack
+export default TechStack;

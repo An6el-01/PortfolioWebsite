@@ -1,0 +1,89 @@
+.techstack-carousel-wrapper {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto 2rem auto;
+  padding: 0.5rem 0;
+}
+
+.techstack-carousel {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 1.5rem;
+  width: max-content;
+  min-width: 100vw;
+  will-change: transform;
+  user-select: none;
+}
+
+.css-infinite-scroll {
+  animation: techstack-scroll 32s linear infinite;
+}
+
+@keyframes techstack-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.techstack-carousel-card {
+  min-width: 140px;
+  max-width: 160px;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(30, 30, 30, 0.7);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  border: 1.5px solid rgba(177, 108, 255, 0.18);
+  transition: box-shadow 0.2s, border 0.2s, transform 0.2s;
+  margin: 0.5rem 0;
+  padding: 1.2rem 0.7rem 1rem 0.7rem;
+  cursor: pointer;
+}
+
+.techstack-carousel-card:hover {
+  box-shadow: 0 8px 32px #b16cff99;
+  border: 1.5px solid #b16cff;
+  transform: translateY(-6px) scale(1.04);
+}
+
+.techstack-carousel-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 0.7rem;
+  filter: drop-shadow(0 0 8px #b16cff55);
+}
+
+.techstack-carousel-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.2rem;
+  text-align: center;
+}
+
+.techstack-carousel-type {
+  font-size: 0.95rem;
+  color: #b16cff;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .techstack-carousel-card {
+    min-width: 110px;
+    max-width: 120px;
+    min-height: 120px;
+    padding: 0.7rem 0.3rem 0.7rem 0.3rem;
+  }
+  .techstack-carousel-icon {
+    width: 36px;
+    height: 36px;
+  }
+} 

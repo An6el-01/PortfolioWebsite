@@ -33,8 +33,9 @@ function Experience() {
   }
 
   return (
-    <section className="experience-container">
+    <section className="experience-container compact-section" id="experience">
       {/* Toggle Buttons */}
+      <h2>Experience</h2>
       <div className="toggle-section">
         <button
           className={filter === 'Work' ? 'active' : ''}

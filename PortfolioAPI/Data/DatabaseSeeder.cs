@@ -19,43 +19,61 @@ namespace PortfolioAPI.Data
                 {
                     new Project
                     {
-                        Name = "Financial Management App",
-                        Description = " A personal finance app designed to help users track expenses, manage budgets, and set savings goals. It includes features like financial overviews, recent transactions, goal tracking, and budget insights, making it easier to organize and monitor finances in one place.",
-                        ImageUrl = "http://localhost:5015/images/ComingSoon.jpg",
-                        RepositoryUrl = "https://github.com/An6el-01/BudgetBee",
-                        TechStack = "TypeScript, Python, JavaScript, PostgreSQL, React Native, Expo, Docker, Google Cloud.",
+                        Name = "VIP Spooling",
+                        Description = "Custom form management system mobile app.",
+                        ImageUrl = "http://localhost:5015/images/MockUpVIP.jpeg",
+                        RepositoryUrl = "https://github.com/An6el-01/VipSpooling-Mobile.git",
+                        TechStack = new string[] 
+                        { 
+                            "http://localhost:5015/images/TypeScript.png", 
+                            "http://localhost:5015/images/ReactNativeIcon.png",
+                            "http://localhost:5015/images/node.png",
+                            "http://localhost:5015/images/AWS.png" 
+                        },
                     },
-                    new Project
-                    {
-                        Name = "E-Commerce Platform",
-                        Description = "A platform designed for my personal social media brand, \"The Daily Drive\", to provide users with tools and resources to enhance their productivity, fitness, and financial management. It offers products like Notion templates, Excel spreadsheets, and courses, while also promoting apps for fitness training and budget management. Additionally, it features a shop with branded merchandise.",
-                        ImageUrl = "http://localhost:5015/images/ComingSoon.jpg",
-                        RepositoryUrl = "https://github.com/An6el-01/TheDailyDrive_Website",
-                        TechStack = "CSS, PHP, JavaScript, React, Laravel, MySQL."
-                    },
-                    new Project
-                    {
-                        Name = "AI Fitness App",
-                        Description = "A mobile application designed to help users structure their workouts and diet plans based on their fitness level, goals, and time frame. It offers personalized guidance through AI, making fitness accessible and affordable.",
-                        ImageUrl = "http://localhost:5015/images/ComingSoon.jpg",
-                        RepositoryUrl = "https://github.com/An6el-01/AI_Fitness",
-                        TechStack = "Flutter (Dart), JavaScript, Node.js, MongoDB, REST Api.",
+                    new Project {
+                        Name = "Shadow Foam",
+                        Description = "In house order management and manufacturing system.",
+                        ImageUrl = "http://localhost:5015/images/MockUpSF.jpeg",
+                        RepositoryUrl = "https://github.com/An6el-01/Cloud_Cut.git",
+                        TechStack = new string[] 
+                        {
+                            "http://localhost:5015/images/TypeScript.png",
+                            "http://localhost:5015/images/JavaScript.png",
+                            "http://localhost:5015/images/ReactIcon.png",
+                            "http://localhost:5015/images/node.png",
+                            "http://localhost:5015/images/Supabase.png"
+                        }
                     },
                     new Project
                     {
                         Name = "The Workout Library",
-                        Description = "Built a workout management app for a client to manage his clients' workouts and fitness progress, optimized for multi-device compatibility.",
+                        Description = "A custom fitness program management system.",
                         ImageUrl = "http://localhost:5015/images/MockUpWorkoutLibrary.jpeg",
                         RepositoryUrl = "https://github.com/An6el-01/WorkoutLibrary",
-                        TechStack = "HTML, CSS, JavaScript, C#, ASP.NET Core, SQL Server, Azure.",
+                        TechStack = new string[]
+                        {
+                            "http://localhost:5015/images/HTML.png",
+                            "http://localhost:5015/images/CSS.png",
+                            "http://localhost:5015/images/C_sharp.png",
+                            "http://localhost:5015/images/ASP.png",
+                            "http://localhost:5015/images/Azure.png",
+                        },
                     },
                     new Project
                     {
                         Name = "Decentralized Control Panel",
-                        Description = "Developed an IoT control panel application for secure, real-time device management. Optimizing energy usage and automation of devices across my home.",
+                        Description = "An IoT control panel mobile app.",
                         ImageUrl = "http://localhost:5015/images/MockUpControlPanel.jpeg",
                         RepositoryUrl = "https://github.com/An6el-01/RaspberryPi-IoT",
-                        TechStack = "JavaScript, Python, React Native, Node.js, AWS."
+                        TechStack = new string[]
+                        {
+                            "http://localhost:5015/images/JavaScript.png",
+                            "http://localhost:5015/images/python.png",
+                            "http://localhost:5015/images/ReactNativeIcon.png",
+                            "http://localhost:5015/images/node.png",
+                            "http://localhost:5015/images/AWS.png",
+                        }
                     }
                 });
                 context.SaveChanges();
@@ -73,8 +91,6 @@ namespace PortfolioAPI.Data
                 new TechStack { Name = "React Native", Icon = "http://localhost:5015/images/ReactNativeIcon.png", Type = "Framework" },
                 new TechStack { Name = "ASP.NET Core", Icon = "http://localhost:5015/images/ASP.png", Type = "Framework" },
                 new TechStack { Name = "Node.js", Icon = "http://localhost:5015/images/node.png", Type = "Runtime" },
-                new TechStack { Name = "PHP", Icon = "http://localhost:5015/images/php.png", Type = "Programming Language" },
-                new TechStack { Name = "Flutter", Icon = "http://localhost:5015/images/flutter.png", Type = "Framework" },
                 new TechStack { Name = "JavaScript", Icon = "http://localhost:5015/images/JavaScript.png", Type = "Programming Language" },
                 new TechStack { Name = "TypeScript", Icon = "http://localhost:5015/images/TypeScript.png", Type = "Programming Language" },
                 new TechStack { Name = "Python", Icon = "http://localhost:5015/images/Python.png", Type = "Programming Language" },
@@ -82,12 +98,12 @@ namespace PortfolioAPI.Data
                 new TechStack { Name = "HTML", Icon = "http://localhost:5015/images/HTML.png", Type = "Markup Language" },
                 new TechStack { Name = "CSS", Icon = "http://localhost:5015/images/CSS.png", Type = "Stylesheet Language" },
                 new TechStack { Name = "PostgreSQL", Icon = "http://localhost:5015/images/PostgreSQL.png", Type = "Database" },
-                new TechStack { Name = "MongoDB", Icon = "http://localhost:5015/images/MongoDB.png", Type = "Database" },
                 new TechStack { Name = "MySQL", Icon = "http://localhost:5015/images/mysql.png", Type = "Database" },
                 new TechStack { Name = "Docker", Icon = "http://localhost:5015/images/docker.png", Type = "Containerization" },
                 new TechStack { Name = "Google Cloud", Icon = "http://localhost:5015/images/googleCloud.png", Type = "Cloud Service" },
-                new TechStack { Name = "Azure", Icon = "http://localhost:5015/images/Azure.png", Type = "Cloud Service" },
-                new TechStack { Name = "AWS", Icon = "http://localhost:5015/images/AWS.png", Type = "Cloud Service" }
+                new TechStack { Name = "AWS", Icon = "http://localhost:5015/images/AWS.png", Type = "Cloud Service" },
+                new TechStack { Name = "Supabase", Icon = "http://localhost:5015/images/supabase.png", Type = "Cloud Service" },
+                new TechStack { Name = "Azure", Icon = "http://localhost:5015/images/Azure.png", Type = "Cloud Service" }
             };
 
             foreach (var techStackData in techStackSeedData)
@@ -114,6 +130,14 @@ namespace PortfolioAPI.Data
             {
                 //Work Experiences
                 new Experience{
+                    Name="Shadow Foam ltd",
+                    Role="Software Developer",
+                    Date="February 2025 - Present",
+                    Description="Led the development of a new in-house order management and manufacturing system.",
+                    Type="Work",
+                    ImageUrl="http://localhost:5015/images/ShadowFoam-logo.png",
+                },
+                new Experience{
                     Name= "Bright Network Internship Experience UK: Technology",
                     Role= "Intern",
                     Date= "29 June 2024 - 1 July 2024",
@@ -131,14 +155,6 @@ namespace PortfolioAPI.Data
                     ImageUrl = "http://localhost:5015/images/EntityLogo.png",
                 },
                 new Experience{
-                    Name=" HSBC Digital Business Services",
-                    Role="Intern",
-                    Date="September 2023 - October 2023",
-                    Description="Analyzed transaction data and brainstormed initiatives for net zero.",
-                    Type="Work",
-                    ImageUrl="http://localhost:5015/images/hsbcLogo.png",
-                },
-                new Experience{
                     Name= "Zebra Technologies Internship Experience Programme",
                     Role= "Intern",
                     Date= "August 2023 - September 2023",
@@ -146,6 +162,15 @@ namespace PortfolioAPI.Data
                     Type="Work",
                     ImageUrl= "http://localhost:5015/images/ZebraTechnologiesLogo.png",
                 },
+                new Experience{
+                    Name= "Sandler Training Sales Foundations Program",
+                    Role= "Student",
+                    Date= "August 2024 - November 2024",
+                    Description= "Completed a Sales Foundations Program mastering consultative selling techniques.",
+                    Type= "Studies",
+                    ImageUrl= "http://localhost:5015/images/Sandler.png",
+                },
+
                 new Experience{
                       Name= "University of Chester",
                       Role="Student",

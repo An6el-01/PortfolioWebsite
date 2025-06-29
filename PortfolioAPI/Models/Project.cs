@@ -6,6 +6,6 @@ namespace PortfolioAPI.Models{
         public string? Description {get; set; }
         public string? ImageUrl { get; set; }
         public string? RepositoryUrl { get; set; }
-        public string? TechStack { get; set; }
+        public string[]? TechStack { get; set; }
     }
 }

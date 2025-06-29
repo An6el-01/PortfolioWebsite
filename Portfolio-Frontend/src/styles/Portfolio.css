@@ -1,4 +1,3 @@
-
 /* Projects CSS */
 
 .projects-section, .experiences-section, .techstack-section {
@@ -17,11 +16,16 @@
     border-radius: 8px;
     overflow: hidden;
     padding: 1rem;
-    transition: transform 0.2s ease;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
   .project-card:hover, .experience-card:hover, .techstack-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border-color: #007bff;
   }
   
   .project-image, .experience-image, .techstack-icon {
@@ -29,6 +33,19 @@
     height: auto;
     object-fit: cover;
     margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover .project-image {
+    transform: scale(1.05);
+  }
+  
+  .project-card h3 {
+    transition: color 0.3s ease;
+  }
+  
+  .project-card:hover h3 {
+    color: #007bff;
   }
   
   a {
@@ -81,6 +98,26 @@
   .filter-section select{
     padding: 5px;
     font-size: 12px;
+  }
+
+  .tech-stack-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+  
+  .tech-stack-image {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 4px;
+    transition: transform 0.2s ease;
+  }
+  
+  .tech-stack-image:hover {
+    transform: scale(1.1);
   }
 
   /*Experience CSS */
