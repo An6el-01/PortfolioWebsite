@@ -3,7 +3,6 @@ import Header from './components/Header';
 import Background from './utils/background';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
-import TechStack from './components/TechStack';
 import AboutMe from './components/AboutMe';
 import Hero from './components/Hero';
 import './App.css';
@@ -21,7 +20,6 @@ function App() {
         <Projects />
         <AboutMe />
         <Experience />
-        <TechStack />
       </div>
     </div>
   );
