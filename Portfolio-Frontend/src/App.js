@@ -5,6 +5,7 @@ import Experience from './components/Experience';
 import Projects from './components/Projects';
 import TechStack from './components/TechStack';
 import AboutMe from './components/AboutMe';
+import Hero from './components/Hero';
 import './App.css';
 
 function App() {
@@ -14,13 +15,13 @@ function App() {
       <Header />
       {/* Dynamic Background Component */}
       <Background />
-
       {/* Main Content */}
       <div className="content">
+        <Hero />
+        <Projects />
         <AboutMe />
         <Experience />
         <TechStack />
-        <Projects />
       </div>
     </div>
   );

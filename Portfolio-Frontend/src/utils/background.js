@@ -3,16 +3,10 @@ import '../styles/background.css';
 
 const Background = () => {
   return (
-    <div 
-      className="static-background"
-      style={{
-        backgroundImage: 'url("http://localhost:5015/images/Background.jpg")',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        backgroundAttachment: 'fixed'
-      }}
-    />
+    <div className="static-background">
+      <div className="stars"></div>
+      <div className="twinkling"></div>
+    </div>
   );
 };
 
