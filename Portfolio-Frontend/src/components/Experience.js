@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { fetchExperiences } from '../services/api';
-import '../styles/Experience.css'; // New CSS file for styling
+import '../styles/Experience.css';
 
 function Experience() {
   const [experiences, setExperiences] = useState([]);
@@ -33,39 +33,58 @@ function Experience() {
   }
 
   return (
-    <section className="experience-container compact-section" id="experience">
-      {/* Toggle Buttons */}
-      <h2>Experience</h2>
-      <div className="toggle-section">
-        <button
-          className={filter === 'Work' ? 'active' : ''}
-          onClick={() => setFilter('Work')}
-        >
-          Work
-        </button>
-        <button
-          className={filter === 'Studies' ? 'active' : ''}
-          onClick={() => setFilter('Studies')}
-        >
-          Education
-        </button>
+    <section className="experience-section floating-bg" id="experience">
+      <div className="experience-header-bar">
+        <h1 className="experience-header">Experience</h1>
+        <div className="experience-toggle">
+          <button
+            className={filter === 'Work' ? 'active' : ''}
+            onClick={() => setFilter('Work')}
+            aria-label="Work Experience"
+          >
+            Work Experience
+          </button>
+          <button
+            className={filter === 'Studies' ? 'active' : ''}
+            onClick={() => setFilter('Studies')}
+            aria-label="Education"
+          >
+            Education
+          </button>
+        </div>
       </div>
 
-      {/* Timeline */}
-      <div className="timeline-container">
-        {filteredExperiences.map((experience, index) => (
-          <div key={experience.id} className="timeline-item">
-            <div className="timeline-icon">
-              <img src={experience.imageUrl} alt={experience.name} />
+      <div className="experience-timeline-container">
+        <div className="experience-timeline">
+          {filteredExperiences.map((experience, index) => (
+            <div key={experience.id} className="experience-timeline-item">
+              <div className="experience-timeline-icon">
+                <img 
+                  src={experience.imageUrl} 
+                  alt={experience.name}
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                  }}
+                />
+              </div>
+              <div className="experience-timeline-content">
+                <div className="experience-timeline-title-row">
+                  <h3 className="experience-timeline-title" title={experience.name}>{experience.name}</h3>
+                </div>
+                <div className="experience-timeline-role-row">
+                  <span className="experience-timeline-role">{experience.role}</span>
+                </div>
+                <p className="experience-timeline-description">{experience.description}</p>
+              </div>
+              <div className="experience-timeline-date-outer-row">
+                <span className="experience-timeline-date-pill">{experience.date}</span>
+              </div>
+              {index < filteredExperiences.length - 1 && (
+                <div className="experience-timeline-connector"></div>
+              )}
             </div>
-            <div className="timeline-content">
-              <p className="timeline-date">{experience.date}</p>
-              <h3 className="timeline-title">{experience.name}</h3>
-              <p className="timeline-role">{experience.role}</p>
-              <p className="timeline-description">{experience.description}</p>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );
