@@ -179,7 +179,7 @@ small, .small-text {
 
 section {
   padding: 5rem 0 4rem 0;
-  width: 100vw;
+  width: 100%;
   max-width: 100vw;
   margin: 0;
   position: relative;
@@ -191,7 +191,7 @@ section {
   box-shadow: 0 8px 32px rgba(0,0,0,0.25);
   backdrop-filter: blur(8px);
   border: 1.5px solid rgba(177, 108, 255, 0.18);
-  padding: 2rem 2rem 1.5rem 2rem;
+  padding: 2rem 1rem 1.5rem 2rem;
   margin-bottom: 2.5rem;
   transition: box-shadow 0.2s, border 0.2s;
 }

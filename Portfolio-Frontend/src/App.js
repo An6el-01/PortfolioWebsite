@@ -5,7 +5,6 @@ import Experience from './components/Experience';
 import Projects from './components/Projects';
 import AboutMe from './components/AboutMe';
 import Hero from './components/Hero';
-import Contact from './components/Contact';
 import './App.css';
 
 function App() {
@@ -21,7 +20,6 @@ function App() {
         <Projects />
         <AboutMe />
         <Experience />
-        <Contact />
       </div>
     </div>
   );

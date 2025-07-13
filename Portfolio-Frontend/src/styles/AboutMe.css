@@ -8,6 +8,8 @@
   padding: 0;
   width: 100%;
   margin-top: 7rem;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .aboutme-split-left {
@@ -16,9 +18,9 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 0rem 3.5rem 2.5rem 5vw;
+  padding: 0rem 2rem 2.5rem 2rem;
   min-width: 0;
-  max-width: 56vw;
+  max-width: 52vw;
 }
 
 .aboutme-split-name {
@@ -266,7 +268,7 @@
   align-items: stretch;
   justify-content: flex-end;
   min-width: 0;
-  max-width: 44vw;
+  max-width: 42vw;
   overflow: hidden;
 }
 

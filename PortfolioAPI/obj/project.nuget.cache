@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QR9M29KAcw8=",
+  "dgSpecHash": "IdEE3xQilvY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\PortfolioAPI.csproj",
+  "projectFilePath": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\PortfolioAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\amsal\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\amsal\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.10\\microsoft.aspnetcore.openapi.8.0.10.nupkg.sha512",
