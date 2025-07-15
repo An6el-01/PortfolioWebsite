@@ -10,79 +10,79 @@ namespace PortfolioAPI.Data
         {
             context.Database.EnsureCreated();
 
+            // Clear existing data to refresh with new images
+            Console.WriteLine("Clearing existing data...");
+            context.Projects.RemoveRange(context.Projects);
+            context.TechStacks.RemoveRange(context.TechStacks);
+            context.Experiences.RemoveRange(context.Experiences);
+            context.SaveChanges();
+            Console.WriteLine("Existing data cleared successfully.");
 
-            // Add Projects if none exists
-            if (!context.Projects.Any())
+            // Add Projects
+            Console.WriteLine("Adding projects to the database...");
+            context.Projects.AddRange(new List<Project>
             {
-                Console.WriteLine("Adding projects to the database...");
-                context.Projects.AddRange(new List<Project>
+                new Project
                 {
-                    new Project
-                    {
-                        Name = "VIP Spooling",
-                        Description = "Custom form management system mobile app.",
-                        ImageUrl = "http://localhost:5015/images/MockUpVIP.jpeg",
-                        RepositoryUrl = "https://github.com/An6el-01/VipSpooling-Mobile.git",
-                        TechStack = new string[] 
-                        { 
-                            "http://localhost:5015/images/TypeScript.png", 
-                            "http://localhost:5015/images/ReactNativeIcon.png",
-                            "http://localhost:5015/images/node.png",
-                            "http://localhost:5015/images/AWS.png" 
-                        },
+                    Name = "VIP Spooling",
+                    Description = "Custom form management system mobile app.",
+                    ImageUrl = "http://localhost:5015/images/MockUpVIP.jpeg",
+                    RepositoryUrl = "https://github.com/An6el-01/VipSpooling-Mobile.git",
+                    TechStack = new string[] 
+                    { 
+                        "http://localhost:5015/images/TypeScript.png", 
+                        "http://localhost:5015/images/ReactNativeIcon.png",
+                        "http://localhost:5015/images/node.png",
+                        "http://localhost:5015/images/AWS.png" 
                     },
-                    new Project {
-                        Name = "Shadow Foam",
-                        Description = "In house order management and manufacturing system.",
-                        ImageUrl = "http://localhost:5015/images/MockUpSF.jpeg",
-                        RepositoryUrl = "https://github.com/An6el-01/Cloud_Cut.git",
-                        TechStack = new string[] 
-                        {
-                            "http://localhost:5015/images/TypeScript.png",
-                            "http://localhost:5015/images/JavaScript.png",
-                            "http://localhost:5015/images/ReactIcon.png",
-                            "http://localhost:5015/images/node.png",
-                            "http://localhost:5015/images/Supabase.png"
-                        }
-                    },
-                    new Project
+                },
+                new Project {
+                    Name = "Shadow Foam",
+                    Description = "In house order management and manufacturing system.",
+                    ImageUrl = "http://localhost:5015/images/MockUpSF.jpeg",
+                    RepositoryUrl = "https://github.com/An6el-01/Cloud_Cut.git",
+                    TechStack = new string[] 
                     {
-                        Name = "The Workout Library",
-                        Description = "A custom fitness program management system.",
-                        ImageUrl = "http://localhost:5015/images/MockUpWorkoutLibrary.jpeg",
-                        RepositoryUrl = "https://github.com/An6el-01/WorkoutLibrary",
-                        TechStack = new string[]
-                        {
-                            "http://localhost:5015/images/HTML.png",
-                            "http://localhost:5015/images/CSS.png",
-                            "http://localhost:5015/images/C_sharp.png",
-                            "http://localhost:5015/images/ASP.png",
-                            "http://localhost:5015/images/Azure.png",
-                        },
-                    },
-                    new Project
-                    {
-                        Name = "Decentralized Control Panel",
-                        Description = "An IoT control panel mobile app.",
-                        ImageUrl = "http://localhost:5015/images/MockUpControlPanel.jpeg",
-                        RepositoryUrl = "https://github.com/An6el-01/RaspberryPi-IoT",
-                        TechStack = new string[]
-                        {
-                            "http://localhost:5015/images/JavaScript.png",
-                            "http://localhost:5015/images/python.png",
-                            "http://localhost:5015/images/ReactNativeIcon.png",
-                            "http://localhost:5015/images/node.png",
-                            "http://localhost:5015/images/AWS.png",
-                        }
+                        "http://localhost:5015/images/TypeScript.png",
+                        "http://localhost:5015/images/JavaScript.png",
+                        "http://localhost:5015/images/ReactIcon.png",
+                        "http://localhost:5015/images/node.png",
+                        "http://localhost:5015/images/supabase.png"
                     }
-                });
-                context.SaveChanges();
-                Console.WriteLine("Projects successfully added.");
-            }
-            else
-            {
-                Console.WriteLine("Projects already exist in the database.");
-            }
+                },
+                new Project
+                {
+                    Name = "The Workout Library",
+                    Description = "A custom fitness program management system.",
+                    ImageUrl = "http://localhost:5015/images/MockUpWorkoutLibrary.jpeg",
+                    RepositoryUrl = "https://github.com/An6el-01/WorkoutLibrary",
+                    TechStack = new string[]
+                    {
+                        "http://localhost:5015/images/HTML.png",
+                        "http://localhost:5015/images/CSS.png",
+                        "http://localhost:5015/images/C_sharp.png",
+                        "http://localhost:5015/images/ASP.png",
+                        "http://localhost:5015/images/Azure.png",
+                    },
+                },
+                new Project
+                {
+                    Name = "Decentralized Control Panel",
+                    Description = "An IoT control panel mobile app.",
+                    ImageUrl = "http://localhost:5015/images/MockUpControlPanel.jpeg",
+                    RepositoryUrl = "https://github.com/An6el-01/RaspberryPi-IoT",
+                    TechStack = new string[]
+                    {
+                        "http://localhost:5015/images/JavaScript.png",
+                        "http://localhost:5015/images/python.png",
+                        "http://localhost:5015/images/ReactNativeIcon.png",
+                        "http://localhost:5015/images/node.png",
+                        "http://localhost:5015/images/AWS.png",
+                    }
+                }
+            });
+            context.SaveChanges();
+            Console.WriteLine("Projects successfully added.");
 
             // Seed TechStacks
             var techStackSeedData = new List<TechStack>
@@ -93,7 +93,7 @@ namespace PortfolioAPI.Data
                 new TechStack { Name = "Node.js", Icon = "http://localhost:5015/images/node.png", Type = "Runtime" },
                 new TechStack { Name = "JavaScript", Icon = "http://localhost:5015/images/JavaScript.png", Type = "Programming Language" },
                 new TechStack { Name = "TypeScript", Icon = "http://localhost:5015/images/TypeScript.png", Type = "Programming Language" },
-                new TechStack { Name = "Python", Icon = "http://localhost:5015/images/Python.png", Type = "Programming Language" },
+                new TechStack { Name = "Python", Icon = "http://localhost:5015/images/python.png", Type = "Programming Language" },
                 new TechStack { Name = "C#", Icon = "http://localhost:5015/images/C_sharp.png", Type = "Programming Language" },
                 new TechStack { Name = "HTML", Icon = "http://localhost:5015/images/HTML.png", Type = "Markup Language" },
                 new TechStack { Name = "CSS", Icon = "http://localhost:5015/images/CSS.png", Type = "Stylesheet Language" },
@@ -106,25 +106,9 @@ namespace PortfolioAPI.Data
                 new TechStack { Name = "Azure", Icon = "http://localhost:5015/images/Azure.png", Type = "Cloud Service" }
             };
 
-            foreach (var techStackData in techStackSeedData)
-            {
-                var existingTechStack = context.TechStacks.FirstOrDefault(ts => ts.Name == techStackData.Name);
-
-                if (existingTechStack != null)
-                {
-                    // Update existing entry
-                    existingTechStack.Type = techStackData.Type;
-                    existingTechStack.Icon = techStackData.Icon; // Update the icon field
-                }
-                else
-                {
-                    // Add new entry
-                    context.TechStacks.Add(techStackData);
-                }
-            }
-
+            context.TechStacks.AddRange(techStackSeedData);
             context.SaveChanges();
-            Console.WriteLine("TechStacks updated or added successfully.");
+            Console.WriteLine("TechStacks added successfully.");
 
             var experienceSeedData = new List<Experience>
             {
@@ -181,26 +165,9 @@ namespace PortfolioAPI.Data
                 }
             };
 
-            foreach (var experienceData in experienceSeedData)
-            {
-                var existingExperience =  context.Experiences.FirstOrDefault(e => e.Name == experienceData.Name);
-
-                if (existingExperience != null)
-                {
-                    existingExperience.Role = experienceData.Role;
-                    existingExperience.Date = experienceData.Date;
-                    existingExperience.Description = experienceData.Description;
-                    existingExperience.Type = experienceData.Type;
-                    existingExperience.ImageUrl = experienceData.ImageUrl;
-                }
-                else
-                {
-                    context.Experiences.Add(experienceData);
-                }
-            }
-
+            context.Experiences.AddRange(experienceSeedData);
             context.SaveChanges();
-            Console.WriteLine("Experience updated or added successfully.");
+            Console.WriteLine("Experience added successfully.");
         }
     }
 }

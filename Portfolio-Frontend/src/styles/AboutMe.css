@@ -7,9 +7,12 @@
   box-shadow: none;
   padding: 0;
   width: 100%;
-  margin-top: 7rem;
+  margin: 4rem auto 0 auto;
   box-sizing: border-box;
   overflow-x: hidden;
+  max-width: 100vw;
+  justify-content: center;
+  align-items: center;
 }
 
 .aboutme-split-left {
@@ -18,14 +21,15 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 0rem 2rem 2.5rem 2rem;
+  padding: 2rem 2rem 2.5rem 2rem;
   min-width: 0;
-  max-width: 52vw;
+  max-width: 50vw;
+  box-sizing: border-box;
 }
 
 .aboutme-split-name {
   font-family: 'Space Grotesk', 'Inter', Arial, sans-serif;
-  font-size: 1rem;
+  font-size: clamp(0.85rem, 1.2vw, 1rem);
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -35,32 +39,33 @@
 
 .aboutme-split-headline {
   font-family: 'DM Serif Display', 'Playfair Display', serif;
-  font-size: clamp(2.8rem, 6vw, 4.2rem);
-  font-weight: 400;
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  font-weight: 500;
   line-height: 1.08;
-  margin: 0 0 2.2rem 0;
+  margin: 0 0 2rem 0;
   color: #fff;
   letter-spacing: 0.01em;
 }
 
 .aboutme-split-desc {
   font-family: 'Inter', 'Space Grotesk', Arial, sans-serif;
-  font-size: 1.08rem;
+  font-size: clamp(0.95rem, 1.3vw, 1.08rem);
   color: #d1d5db;
-  margin-bottom: 2.8rem;
+  margin-bottom: 2.5rem;
   max-width: 700px;
   line-height: 1.6;
+  font-weight: 400;
 }
 
 .aboutme-split-lists {
   display: flex;
-  gap: 4.5rem;
+  gap: 3.5rem;
   margin-top: auto;
   width: 100%;
 }
 
 .aboutme-split-list-col {
-  min-width: 180px;
+  min-width: 0;
   flex: 1;
 }
 
@@ -68,13 +73,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 0.7rem;
+  margin-bottom: 1rem;
   gap: 1rem;
 }
 
 .aboutme-split-list-title {
   font-family: 'Space Grotesk', 'Inter', Arial, sans-serif;
-  font-size: 1.05rem;
+  font-size: clamp(0.95rem, 1.2vw, 1.05rem);
   font-weight: 600;
   color: #b16cff;
   letter-spacing: 0.04em;
@@ -87,15 +92,15 @@
 
 .aboutme-filter-select {
   font-family: 'Inter', 'Space Grotesk', Arial, sans-serif;
-  font-size: 0.85rem;
+  font-size: clamp(0.75rem, 1vw, 0.85rem);
   font-weight: 500;
   color: #fff;
-  background: linear-gradient(135deg, rgba(30, 30, 30, 0.9) 0%, rgba(20, 20, 20, 0.95) 100%);
-  border: 1px solid rgba(177, 108, 255, 0.3);
+  background: linear-gradient(135deg, rgba(30, 30, 30, 0.92) 0%, rgba(20, 20, 20, 0.98) 100%);
+  border: 1px solid rgba(177, 108, 255, 0.25);
   border-radius: 8px;
   padding: 0.5rem 2rem 0.5rem 0.8rem;
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -104,18 +109,18 @@
   background-position: right 0.7rem center;
   background-size: 12px;
   min-width: 140px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .aboutme-filter-select:hover {
-  border-color: rgba(177, 108, 255, 0.5);
-  box-shadow: 0 4px 12px rgba(177, 108, 255, 0.15);
+  border-color: rgba(177, 108, 255, 0.4);
+  box-shadow: 0 4px 12px rgba(177, 108, 255, 0.12);
 }
 
 .aboutme-filter-select:focus {
   outline: none;
-  border-color: rgba(177, 108, 255, 0.6);
-  box-shadow: 0 0 0 2px rgba(177, 108, 255, 0.2);
+  border-color: rgba(177, 108, 255, 0.5);
+  box-shadow: 0 0 0 2px rgba(177, 108, 255, 0.15);
 }
 
 .aboutme-filter-select option {
@@ -132,7 +137,7 @@
 
 .aboutme-split-list-col li {
   font-family: 'Inter', Arial, sans-serif;
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 1.1vw, 1rem);
   color: #fff;
   margin-bottom: 0.35rem;
   line-height: 1.5;
@@ -144,7 +149,7 @@
   overflow: hidden;
   margin: 0;
   padding: 0.5rem 0;
-  max-height: 200px;
+  max-height: 180px;
   position: relative;
 }
 
@@ -152,7 +157,7 @@
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  gap: 1.2rem;
+  gap: 1rem;
   width: max-content;
   min-width: 100%;
   will-change: transform;
@@ -173,23 +178,23 @@
 }
 
 .aboutme-techstack-carousel-card {
-  min-width: 110px;
-  max-width: 130px;
-  min-height: 130px;
+  min-width: clamp(90px, 8vw, 110px);
+  max-width: clamp(100px, 9vw, 130px);
+  min-height: clamp(100px, 9vw, 130px);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgba(30, 30, 30, 0.9) 0%, rgba(20, 20, 20, 0.95) 100%);
+  background: linear-gradient(135deg, rgba(30, 30, 30, 0.92) 0%, rgba(20, 20, 20, 0.98) 100%);
   border-radius: 16px;
   box-shadow: 
-    0 8px 32px rgba(0, 0, 0, 0.3),
-    0 2px 8px rgba(177, 108, 255, 0.1),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(177, 108, 255, 0.2);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    0 4px 16px rgba(0, 0, 0, 0.15),
+    0 2px 8px rgba(177, 108, 255, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(177, 108, 255, 0.18);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   margin: 0.3rem 0;
-  padding: 1rem 0.8rem 0.8rem 0.8rem;
+  padding: 0.8rem 0.6rem 0.6rem 0.6rem;
   cursor: pointer;
   position: relative;
   overflow: hidden;
@@ -204,17 +209,17 @@
   bottom: 0;
   background: linear-gradient(135deg, rgba(177, 108, 255, 0.05) 0%, transparent 50%, rgba(177, 108, 255, 0.02) 100%);
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.2s ease;
   pointer-events: none;
 }
 
 .aboutme-techstack-carousel-card:hover {
   box-shadow: 
-    0 12px 40px rgba(177, 108, 255, 0.25),
-    0 4px 16px rgba(0, 0, 0, 0.4),
-    inset 0 1px 0 rgba(255, 255, 255, 0.15);
-  border: 1px solid rgba(177, 108, 255, 0.4);
-  transform: translateY(-6px) scale(1.05);
+    0 8px 24px rgba(177, 108, 255, 0.18),
+    0 4px 12px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(177, 108, 255, 0.35);
+  transform: translateY(-4px) scale(1.03);
 }
 
 .aboutme-techstack-carousel-card:hover::before {
@@ -222,23 +227,23 @@
 }
 
 .aboutme-techstack-carousel-icon {
-  width: 36px;
-  height: 36px;
-  margin-bottom: 0.7rem;
-  filter: drop-shadow(0 0 8px rgba(177, 108, 255, 0.4));
-  transition: filter 0.3s ease, transform 0.3s ease;
+  width: clamp(28px, 4vw, 36px);
+  height: clamp(28px, 4vw, 36px);
+  margin-bottom: 0.6rem;
+  filter: drop-shadow(0 0 6px rgba(177, 108, 255, 0.3));
+  transition: filter 0.2s ease, transform 0.2s ease;
   z-index: 1;
   position: relative;
 }
 
 .aboutme-techstack-carousel-card:hover .aboutme-techstack-carousel-icon {
-  filter: drop-shadow(0 0 12px rgba(177, 108, 255, 0.6));
-  transform: scale(1.1);
+  filter: drop-shadow(0 0 10px rgba(177, 108, 255, 0.5));
+  transform: scale(1.08);
 }
 
 .aboutme-techstack-carousel-name {
   font-family: 'Inter', 'Space Grotesk', Arial, sans-serif;
-  font-size: 0.9rem;
+  font-size: clamp(0.75rem, 1vw, 0.9rem);
   font-weight: 600;
   color: #fff;
   margin-bottom: 0.2rem;
@@ -251,7 +256,7 @@
 
 .aboutme-techstack-carousel-type {
   font-family: 'Inter', 'Space Grotesk', Arial, sans-serif;
-  font-size: 0.8rem;
+  font-size: clamp(0.65rem, 0.9vw, 0.8rem);
   color: #b16cff;
   font-weight: 500;
   text-align: center;
@@ -268,31 +273,39 @@
   align-items: stretch;
   justify-content: flex-end;
   min-width: 0;
-  max-width: 42vw;
+  max-width: 40vw;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .aboutme-split-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* filter: grayscale(1) contrast(1.08); */
   border: none;
   border-radius: 0;
   min-height: 400px;
-  min-width: 320px;
+  min-width: 0;
   max-width: 100vw;
   max-height: 80vh;
   box-shadow: none;
+  transition: transform 0.3s ease;
 }
 
-@media (max-width: 1100px) {
+.aboutme-split-right:hover .aboutme-split-image {
+  transform: scale(1.02);
+}
+
+@media (max-width: 1200px) {
   .aboutme-split-left {
-    padding: 3rem 1.5rem 2rem 2vw;
-    max-width: 100vw;
+    padding: 2rem 2rem 2rem 2rem;
+    max-width: 60vw;
+  }
+  .aboutme-split-right {
+    max-width: 40vw;
   }
   .aboutme-split-lists {
-    gap: 2.2rem;
+    gap: 2.5rem;
   }
   .aboutme-split-list-header {
     flex-direction: column;
@@ -301,23 +314,7 @@
   }
   .aboutme-filter-select {
     min-width: 120px;
-    font-size: 0.8rem;
-  }
-  .aboutme-techstack-carousel-card {
-    min-width: 100px;
-    max-width: 110px;
-    min-height: 110px;
-    padding: 0.8rem 0.6rem 0.6rem 0.6rem;
-  }
-  .aboutme-techstack-carousel-icon {
-    width: 32px;
-    height: 32px;
-  }
-  .aboutme-techstack-carousel-name {
-    font-size: 0.85rem;
-  }
-  .aboutme-techstack-carousel-type {
-    font-size: 0.75rem;
+    font-size: clamp(0.7rem, 1vw, 0.8rem);
   }
 }
 
@@ -325,25 +322,26 @@
   .aboutme-split {
     flex-direction: column;
     min-height: 0;
+    margin-top: 2rem;
   }
   .aboutme-split-left {
-    padding: 2.5rem 1.2rem 1.5rem 1.2rem;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
     max-width: 100vw;
   }
   .aboutme-split-right {
     max-width: 100vw;
-    min-height: 220px;
-    height: 220px;
+    min-height: 250px;
+    height: 250px;
   }
   .aboutme-split-image {
-    min-height: 180px;
+    min-height: 200px;
     min-width: 0;
-    max-height: 220px;
+    max-height: 250px;
     border-radius: 0;
   }
   .aboutme-split-lists {
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 1.5rem;
   }
   .aboutme-split-list-header {
     flex-direction: column;
@@ -352,26 +350,62 @@
   }
   .aboutme-filter-select {
     min-width: 100px;
-    font-size: 0.75rem;
+    font-size: clamp(0.65rem, 1vw, 0.75rem);
     padding: 0.4rem 1.8rem 0.4rem 0.6rem;
   }
   .aboutme-techstack-carousel-wrapper {
-    max-height: 150px;
+    max-height: 140px;
   }
   .aboutme-techstack-carousel-card {
-    min-width: 90px;
-    max-width: 100px;
-    min-height: 100px;
-    padding: 0.7rem 0.5rem 0.5rem 0.5rem;
+    min-width: clamp(80px, 12vw, 90px);
+    max-width: clamp(90px, 13vw, 100px);
+    min-height: clamp(90px, 12vw, 100px);
+    padding: 0.6rem 0.4rem 0.4rem 0.4rem;
   }
   .aboutme-techstack-carousel-icon {
-    width: 28px;
-    height: 28px;
+    width: clamp(24px, 5vw, 28px);
+    height: clamp(24px, 5vw, 28px);
   }
   .aboutme-techstack-carousel-name {
-    font-size: 0.8rem;
+    font-size: clamp(0.7rem, 1.2vw, 0.8rem);
   }
   .aboutme-techstack-carousel-type {
-    font-size: 0.7rem;
+    font-size: clamp(0.6rem, 1vw, 0.7rem);
+  }
+}
+
+@media (max-width: 600px) {
+  .aboutme-split-left {
+    padding: 1.5rem 1rem 1rem 1rem;
+  }
+  .aboutme-split-right {
+    min-height: 200px;
+    height: 200px;
+  }
+  .aboutme-split-image {
+    min-height: 150px;
+    max-height: 200px;
+  }
+  .aboutme-split-lists {
+    gap: 1rem;
+  }
+  .aboutme-techstack-carousel-wrapper {
+    max-height: 120px;
+  }
+  .aboutme-techstack-carousel-card {
+    min-width: clamp(70px, 15vw, 80px);
+    max-width: clamp(80px, 16vw, 90px);
+    min-height: clamp(80px, 15vw, 90px);
+    padding: 0.5rem 0.3rem 0.3rem 0.3rem;
+  }
+  .aboutme-techstack-carousel-icon {
+    width: clamp(20px, 6vw, 24px);
+    height: clamp(20px, 6vw, 24px);
+  }
+  .aboutme-techstack-carousel-name {
+    font-size: clamp(0.65rem, 1.5vw, 0.75rem);
+  }
+  .aboutme-techstack-carousel-type {
+    font-size: clamp(0.55rem, 1.2vw, 0.65rem);
   }
 } 

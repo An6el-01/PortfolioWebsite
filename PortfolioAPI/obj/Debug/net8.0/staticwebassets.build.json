@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Z9KngkdQeR+UyHAvl0pYcYqEgiqqaFJGV3XALG0vuPE=",
+  "Hash": "i7XIHRqv0XxxrVKL/5ejqsxeOpKfHDb+41uT3YOF5ts=",
   "Source": "PortfolioAPI",
   "BasePath": "_content/PortfolioAPI",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "PortfolioAPI\\wwwroot",
       "Source": "PortfolioAPI",
-      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
       "BasePath": "_content/PortfolioAPI",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\images\\ASP.png",
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\ASP.png",
       "SourceId": "PortfolioAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
       "BasePath": "_content/PortfolioAPI",
       "RelativePath": "images/ASP.png",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\images\\ASP.png"
     },
     {
-      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\images\\AWS.png",
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\AWS.png",
       "SourceId": "PortfolioAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
       "BasePath": "_content/PortfolioAPI",
       "RelativePath": "images/AWS.png",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\images\\AWS.png"
     },
     {
-      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\images\\Azure.png",
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\Azure.png",
       "SourceId": "PortfolioAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
       "BasePath": "_content/PortfolioAPI",
       "RelativePath": "images/Azure.png",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Azure.png"
     },
     {
-      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\images\\Background.jpg",
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\Background.jpg",
       "SourceId": "PortfolioAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
       "BasePath": "_content/PortfolioAPI",
       "RelativePath": "images/Background.jpg",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Background.jpg"
     },
     {
-      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\images\\BrightNetworkLogo.png",
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\BrightNetworkLogo.png",
       "SourceId": "PortfolioAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
       "BasePath": "_content/PortfolioAPI",
       "RelativePath": "images/BrightNetworkLogo.png",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\images\\BrightNetworkLogo.png"
     },
     {
-      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\images\\C_sharp.png",
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\C_sharp.png",
       "SourceId": "PortfolioAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
       "BasePath": "_content/PortfolioAPI",
       "RelativePath": "images/C_sharp.png",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\images\\C_sharp.png"
     },
     {
-      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\images\\ComingSoon.jpg",
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\ComingSoon.jpg",
       "SourceId": "PortfolioAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
       "BasePath": "_content/PortfolioAPI",
       "RelativePath": "images/ComingSoon.jpg",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\images\\ComingSoon.jpg"
     },
     {
-      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\images\\CSS.png",
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\CSS.png",
       "SourceId": "PortfolioAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
       "BasePath": "_content/PortfolioAPI",
       "RelativePath": "images/CSS.png",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\images\\CSS.png"
     },
     {
-      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\images\\docker.png",
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\docker.png",
       "SourceId": "PortfolioAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
       "BasePath": "_content/PortfolioAPI",
       "RelativePath": "images/docker.png",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\images\\docker.png"
     },
     {
-      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\images\\EntityLogo.png",
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\EntityLogo.png",
       "SourceId": "PortfolioAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
       "BasePath": "_content/PortfolioAPI",
       "RelativePath": "images/EntityLogo.png",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\images\\EntityLogo.png"
     },
     {
-      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\images\\flutter.png",
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\flutter.png",
       "SourceId": "PortfolioAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
       "BasePath": "_content/PortfolioAPI",
       "RelativePath": "images/flutter.png",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\images\\flutter.png"
     },
     {
-      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\images\\googleCloud.png",
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\googleCloud.png",
       "SourceId": "PortfolioAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
       "BasePath": "_content/PortfolioAPI",
       "RelativePath": "images/googleCloud.png",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\images\\googleCloud.png"
     },
     {
-      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\images\\headshot.png",
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\headshot.png",
       "SourceId": "PortfolioAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
       "BasePath": "_content/PortfolioAPI",
       "RelativePath": "images/headshot.png",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\images\\headshot.png"
     },
     {
-      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\images\\hsbcLogo.png",
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\hsbcLogo.png",
       "SourceId": "PortfolioAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
       "BasePath": "_content/PortfolioAPI",
       "RelativePath": "images/hsbcLogo.png",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\images\\hsbcLogo.png"
     },
     {
-      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\images\\HTML.png",
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\HTML.png",
       "SourceId": "PortfolioAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
       "BasePath": "_content/PortfolioAPI",
       "RelativePath": "images/HTML.png",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\images\\HTML.png"
     },
     {
-      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\images\\JavaScript.png",
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\JavaScript.png",
       "SourceId": "PortfolioAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
       "BasePath": "_content/PortfolioAPI",
       "RelativePath": "images/JavaScript.png",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\images\\JavaScript.png"
     },
     {
-      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\images\\MockUpControlPanel.jpeg",
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\MockUpControlPanel.jpeg",
       "SourceId": "PortfolioAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
       "BasePath": "_content/PortfolioAPI",
       "RelativePath": "images/MockUpControlPanel.jpeg",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\images\\MockUpControlPanel.jpeg"
     },
     {
-      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\images\\MockUpSF.jpeg",
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\MockUpSF.jpeg",
       "SourceId": "PortfolioAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
       "BasePath": "_content/PortfolioAPI",
       "RelativePath": "images/MockUpSF.jpeg",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\images\\MockUpSF.jpeg"
     },
     {
-      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\images\\MockUpVIP.jpeg",
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\MockUpVIP.jpeg",
       "SourceId": "PortfolioAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
       "BasePath": "_content/PortfolioAPI",
       "RelativePath": "images/MockUpVIP.jpeg",
       "AssetKind": "All",
@@ -378,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\images\\MockUpVIP.jpeg"
     },
     {
-      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\images\\MockUpWorkoutLibrary.jpeg",
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\MockUpWorkoutLibrary.jpeg",
       "SourceId": "PortfolioAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
       "BasePath": "_content/PortfolioAPI",
       "RelativePath": "images/MockUpWorkoutLibrary.jpeg",
       "AssetKind": "All",
@@ -397,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\images\\MockUpWorkoutLibrary.jpeg"
     },
     {
-      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\images\\MongoDB.png",
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\MongoDB.png",
       "SourceId": "PortfolioAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
       "BasePath": "_content/PortfolioAPI",
       "RelativePath": "images/MongoDB.png",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\images\\MongoDB.png"
     },
     {
-      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\images\\mysql.png",
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\mysql.png",
       "SourceId": "PortfolioAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
       "BasePath": "_content/PortfolioAPI",
       "RelativePath": "images/mysql.png",
       "AssetKind": "All",
@@ -435,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\images\\mysql.png"
     },
     {
-      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\images\\node.png",
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\node.png",
       "SourceId": "PortfolioAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
       "BasePath": "_content/PortfolioAPI",
       "RelativePath": "images/node.png",
       "AssetKind": "All",
@@ -454,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\images\\node.png"
     },
     {
-      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\images\\php.png",
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\php.png",
       "SourceId": "PortfolioAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
       "BasePath": "_content/PortfolioAPI",
       "RelativePath": "images/php.png",
       "AssetKind": "All",
@@ -473,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\images\\php.png"
     },
     {
-      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\images\\PostgreSQL.png",
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\PostgreSQL.png",
       "SourceId": "PortfolioAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
       "BasePath": "_content/PortfolioAPI",
       "RelativePath": "images/PostgreSQL.png",
       "AssetKind": "All",
@@ -492,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\images\\PostgreSQL.png"
     },
     {
-      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\images\\python.png",
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\python.png",
       "SourceId": "PortfolioAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
       "BasePath": "_content/PortfolioAPI",
       "RelativePath": "images/python.png",
       "AssetKind": "All",
@@ -511,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\images\\python.png"
     },
     {
-      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\images\\ReactIcon.png",
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\ReactIcon.png",
       "SourceId": "PortfolioAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
       "BasePath": "_content/PortfolioAPI",
       "RelativePath": "images/ReactIcon.png",
       "AssetKind": "All",
@@ -530,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\images\\ReactIcon.png"
     },
     {
-      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\images\\ReactNativeIcon.png",
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\ReactNativeIcon.png",
       "SourceId": "PortfolioAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
       "BasePath": "_content/PortfolioAPI",
       "RelativePath": "images/ReactNativeIcon.png",
       "AssetKind": "All",
@@ -549,29 +549,10 @@
       "OriginalItemSpec": "wwwroot\\images\\ReactNativeIcon.png"
     },
     {
-      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\images\\Sandler.png",
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\ShadowFoam-logo.png",
       "SourceId": "PortfolioAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\",
-      "BasePath": "_content/PortfolioAPI",
-      "RelativePath": "images/Sandler.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\Sandler.png"
-    },
-    {
-      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\images\\ShadowFoam-logo.png",
-      "SourceId": "PortfolioAPI",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
       "BasePath": "_content/PortfolioAPI",
       "RelativePath": "images/ShadowFoam-logo.png",
       "AssetKind": "All",
@@ -587,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\images\\ShadowFoam-logo.png"
     },
     {
-      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\images\\SQLite.png",
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\SQLite.png",
       "SourceId": "PortfolioAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
       "BasePath": "_content/PortfolioAPI",
       "RelativePath": "images/SQLite.png",
       "AssetKind": "All",
@@ -606,10 +587,10 @@
       "OriginalItemSpec": "wwwroot\\images\\SQLite.png"
     },
     {
-      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\images\\supabase.png",
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\supabase.png",
       "SourceId": "PortfolioAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
       "BasePath": "_content/PortfolioAPI",
       "RelativePath": "images/supabase.png",
       "AssetKind": "All",
@@ -625,10 +606,10 @@
       "OriginalItemSpec": "wwwroot\\images\\supabase.png"
     },
     {
-      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\images\\TypeScript.png",
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\TypeScript.png",
       "SourceId": "PortfolioAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
       "BasePath": "_content/PortfolioAPI",
       "RelativePath": "images/TypeScript.png",
       "AssetKind": "All",
@@ -644,10 +625,10 @@
       "OriginalItemSpec": "wwwroot\\images\\TypeScript.png"
     },
     {
-      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\images\\UniversityOfChesterLogo.png",
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\UniversityOfChesterLogo.png",
       "SourceId": "PortfolioAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
       "BasePath": "_content/PortfolioAPI",
       "RelativePath": "images/UniversityOfChesterLogo.png",
       "AssetKind": "All",
@@ -663,10 +644,10 @@
       "OriginalItemSpec": "wwwroot\\images\\UniversityOfChesterLogo.png"
     },
     {
-      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\images\\ZebraTechnologiesLogo.png",
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\ZebraTechnologiesLogo.png",
       "SourceId": "PortfolioAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
       "BasePath": "_content/PortfolioAPI",
       "RelativePath": "images/ZebraTechnologiesLogo.png",
       "AssetKind": "All",

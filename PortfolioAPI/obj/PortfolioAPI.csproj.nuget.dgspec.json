@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\PortfolioAPI.csproj": {}
+    "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\PortfolioAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\PortfolioAPI.csproj": {
+    "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\PortfolioAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\PortfolioAPI.csproj",
+        "projectUniqueName": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\PortfolioAPI.csproj",
         "projectName": "PortfolioAPI",
-        "projectPath": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\PortfolioAPI.csproj",
+        "projectPath": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\PortfolioAPI.csproj",
         "packagesPath": "C:\\Users\\amsal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\portfolioAPI\\obj\\",
+        "outputPath": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\amsal\\AppData\\Roaming\\NuGet\\NuGet.Config",
