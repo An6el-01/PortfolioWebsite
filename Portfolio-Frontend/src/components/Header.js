@@ -1,9 +1,8 @@
 import React, { useRef, useState } from 'react';
-import { FaGithub, FaLinkedin , FaEnvelope} from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
-import '../styles/Header.css';
 
-const Header = () => {
+const Header = ({ isDarkMode }) => {
   const form = useRef();
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState('idle');
@@ -53,41 +52,133 @@ const Header = () => {
 
   return (
     <>
-      <header className="main-header">
-        <div className="header-left">
-          <span className="header-logo">Angel Salinas</span>
-        </div>
-        <nav className="header-nav">
-          <a href="#work">WORK</a>
-          <a href="#about">ABOUT</a>
-          <a href="#contact">CONTACT</a>
-          <a href="#resume">RESUME</a>
-        </nav>
-        <div className="header-icons">
-          <a href="https://github.com/An6el-01" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-            <FaGithub />
-          </a>
-          <a href="https://www.linkedin.com/in/%C3%A1ngel-salinas-25a15a22a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-            <FaLinkedin />
-          </a>
-          <button onClick={handleOpen} aria-label="Contact" className="header-icon-button">
-            <FaEnvelope />
-          </button>
+      <header className={`fixed top-0 left-0 right-0 z-50 backdrop-blur-md transition-all duration-300 ${
+        isDarkMode 
+          ? 'bg-black/60' 
+          : 'bg-white/60'
+      }`}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16">
+            {/* Logo */}
+            <div className="flex-shrink-0">
+              <a href="#hero" className={`font-bold text-lg transition-colors duration-300 ${
+                isDarkMode 
+                  ? 'text-white hover:text-purple-400' 
+                  : 'text-gray-800 hover:text-blue-600'
+              }`}>
+                Angel Salinas
+              </a>
+            </div>
+            
+            {/* Navigation */}
+            <nav className="hidden md:flex space-x-8">
+              <a href="#about" className={`transition-colors duration-300 text-sm font-medium uppercase tracking-wider ${
+                isDarkMode 
+                  ? 'text-white/80 hover:text-white' 
+                  : 'text-gray-700/80 hover:text-gray-900'
+              }`}>
+                About
+              </a>
+              <a href="#projects" className={`transition-colors duration-300 text-sm font-medium uppercase tracking-wider ${
+                isDarkMode 
+                  ? 'text-white/80 hover:text-white' 
+                  : 'text-gray-700/80 hover:text-gray-900'
+              }`}>
+                Projects
+              </a>
+              <a href="#experience" className={`transition-colors duration-300 text-sm font-medium uppercase tracking-wider ${
+                isDarkMode 
+                  ? 'text-white/80 hover:text-white' 
+                  : 'text-gray-700/80 hover:text-gray-900'
+              }`}>
+                Experience
+              </a>
+            </nav>
+            
+            {/* Social Icons
+            <div className="flex items-center space-x-4">
+              <a 
+                href="https://github.com/An6el-01" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                aria-label="GitHub"
+                className={`transition-colors duration-300 ${
+                  isDarkMode 
+                    ? 'text-white/80 hover:text-white' 
+                    : 'text-gray-700/80 hover:text-gray-900'
+                }`}
+              >
+                <FaGithub className="w-5 h-5" />
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/%C3%A1ngel-salinas-25a15a22a/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                aria-label="LinkedIn"
+                className={`transition-colors duration-300 ${
+                  isDarkMode 
+                    ? 'text-white/80 hover:text-white' 
+                    : 'text-gray-700/80 hover:text-gray-900'
+                }`}
+              >
+                <FaLinkedin className="w-5 h-5" />
+              </a>
+              <button 
+                onClick={handleOpen} 
+                aria-label="Contact" 
+                className={`transition-colors duration-300 p-2 rounded-full ${
+                  isDarkMode 
+                    ? 'text-white/80 hover:text-white hover:bg-white/10' 
+                    : 'text-gray-700/80 hover:text-gray-900 hover:bg-gray-900/10'
+                }`}
+              >
+                <FaEnvelope className="w-5 h-5" />
+              </button>
+            </div> */}
+          </div>
         </div>
       </header>
       
+      {/* Contact Modal */}
       {open && (
-        <div className="header-contact-overlay" onClick={handleClose}>
-          <div className="header-contact-modal" onClick={e => e.stopPropagation()}>
-            <button className="header-contact-close" onClick={handleClose} aria-label="Close contact form">×</button>
-            <form ref={form} className="header-contact-form" onSubmit={handleSubmit} autoComplete="off">
+        <div 
+          className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+          onClick={handleClose}
+        >
+          <div className={`rounded-lg shadow-2xl max-w-md w-full p-6 border transition-all duration-300 ${
+            isDarkMode 
+              ? 'bg-gray-900 border-white/10' 
+              : 'bg-white border-gray-200'
+          }`} onClick={e => e.stopPropagation()}>
+            <div className="flex justify-between items-center mb-6">
+              <h3 className={`text-xl font-semibold transition-colors duration-300 ${
+                isDarkMode ? 'text-white' : 'text-gray-800'
+              }`}>
+                Contact Me
+              </h3>
+              <button 
+                onClick={handleClose} 
+                aria-label="Close contact form"
+                className={`transition-colors duration-300 text-2xl font-light ${
+                  isDarkMode ? 'text-white/60 hover:text-white' : 'text-gray-600 hover:text-gray-800'
+                }`}
+              >
+                ×
+              </button>
+            </div>
+            
+            <form ref={form} onSubmit={handleSubmit} autoComplete="off" className="space-y-4">
               <input
                 type="text"
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
                 placeholder="Name"
-                className="header-contact-input"
+                className={`w-full px-4 py-3 border rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:border-transparent ${
+                  isDarkMode 
+                    ? 'bg-gray-800 border-gray-700 text-white placeholder-gray-400 focus:ring-purple-500' 
+                    : 'bg-gray-50 border-gray-300 text-gray-800 placeholder-gray-500 focus:ring-blue-500'
+                }`}
                 required
               />
               <input
@@ -96,7 +187,11 @@ const Header = () => {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="Email"
-                className="header-contact-input"
+                className={`w-full px-4 py-3 border rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:border-transparent ${
+                  isDarkMode 
+                    ? 'bg-gray-800 border-gray-700 text-white placeholder-gray-400 focus:ring-purple-500' 
+                    : 'bg-gray-50 border-gray-300 text-gray-800 placeholder-gray-500 focus:ring-blue-500'
+                }`}
                 required
               />
               <textarea
@@ -104,23 +199,51 @@ const Header = () => {
                 value={formData.message}
                 onChange={handleChange}
                 placeholder="Message"
-                className="header-contact-input"
+                className={`w-full px-4 py-3 border rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:border-transparent resize-none ${
+                  isDarkMode 
+                    ? 'bg-gray-800 border-gray-700 text-white placeholder-gray-400 focus:ring-purple-500' 
+                    : 'bg-gray-50 border-gray-300 text-gray-800 placeholder-gray-500 focus:ring-blue-500'
+                }`}
                 required
                 rows={3}
               />
-              <button type="submit" className="header-contact-send-btn" disabled={status === 'loading'}>
+              
+              <button 
+                type="submit" 
+                disabled={status === 'loading'}
+                className={`w-full font-semibold py-3 px-6 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 ${
+                  isDarkMode 
+                    ? 'bg-purple-600 hover:bg-purple-700 disabled:bg-gray-600 text-white' 
+                    : 'bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 text-white'
+                }`}
+              >
                 {status === 'loading' ? (
                   <>
-                    <span className="header-contact-send-spinner"></span>
-                    Sending...
+                    <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
+                    <span>Sending...</span>
                   </>
                 ) : (
-                  'Send'
+                  'Send Message'
                 )}
               </button>
-              {error && <div className="header-contact-error">{error}</div>}
-              {status === 'success' && <div className="header-contact-success">Message sent!</div>}
-              {status === 'error' && <div className="header-contact-error">Something went wrong. Try again.</div>}
+              
+              {error && (
+                <div className="text-red-400 text-sm bg-red-900/20 border border-red-500/20 rounded-lg p-3">
+                  {error}
+                </div>
+              )}
+              
+              {status === 'success' && (
+                <div className="text-green-400 text-sm bg-green-900/20 border border-green-500/20 rounded-lg p-3">
+                  Message sent successfully!
+                </div>
+              )}
+              
+              {status === 'error' && (
+                <div className="text-red-400 text-sm bg-red-900/20 border border-red-500/20 rounded-lg p-3">
+                  Something went wrong. Please try again.
+                </div>
+              )}
             </form>
           </div>
         </div>

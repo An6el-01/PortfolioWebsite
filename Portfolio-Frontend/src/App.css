@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 
 /* Global Reset */
 * {
@@ -16,14 +14,13 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  background: #000;
-  color: #ffffff;
   scroll-behavior: smooth;
   font-weight: 400;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  transition: color 0.5s ease, background-color 0.5s ease;
 }
 
 body {
@@ -31,14 +28,33 @@ body {
   background: transparent;
 }
 
-/* Typography System - Inspired by Marvin Ogah's website */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Space Grotesk', 'Inter', sans-serif;
-  font-weight: 600;
+/* Theme Transitions */
+.dark {
   color: #ffffff;
+  background: #000;
+}
+
+.light {
+  color: #333333;
+  background: #ffffff;
+}
+
+/* Typography System - Using Inter consistently */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 600;
   margin-bottom: 1rem;
   letter-spacing: -0.02em;
   line-height: 1.2;
+  transition: color 0.5s ease;
+}
+
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+  color: #ffffff;
+}
+
+.light h1, .light h2, .light h3, .light h4, .light h5, .light h6 {
+  color: #333333;
 }
 
 h1 {
@@ -75,30 +91,50 @@ h6 {
 }
 
 p {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-size: clamp(1rem, 1.2vw, 1.125rem);
   font-weight: 400;
   line-height: 1.7;
-  color: #e0e0e0;
   margin-bottom: 1rem;
   letter-spacing: 0.01em;
+  transition: color 0.5s ease;
+}
+
+.dark p {
+  color: #e0e0e0;
+}
+
+.light p {
+  color: #666666;
 }
 
 a {
-  color: #ffffff;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   text-decoration: none;
   transition: all 0.2s ease;
   font-weight: 500;
   position: relative;
 }
 
-a:hover {
+.dark a {
+  color: #ffffff;
+}
+
+.light a {
+  color: #333333;
+}
+
+.dark a:hover {
   color: #b16cff;
+}
+
+.light a:hover {
+  color: #667eea;
 }
 
 /* Navigation Links */
 nav a {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-weight: 500;
   font-size: 0.95rem;
   letter-spacing: 0.02em;
@@ -107,7 +143,7 @@ nav a {
 
 /* Button Typography */
 button {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-weight: 500;
   font-size: 0.95rem;
   letter-spacing: 0.02em;
@@ -115,19 +151,37 @@ button {
 
 /* Small Text */
 small, .small-text {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
-  color: #a0a0a0;
   line-height: 1.5;
+  transition: color 0.5s ease;
+}
+
+.dark small, .dark .small-text {
+  color: #a0a0a0;
+}
+
+.light small, .light .small-text {
+  color: #888888;
 }
 
 /* Caption Text */
 .caption {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-size: 0.8rem;
   font-weight: 400;
-  color: #888888;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  transition: color 0.5s ease;
+}
+
+.dark .caption {
+  color: #888888;
+}
+
+.light .caption {
+  color: #666666;
 }
 
 /* Background Container */
@@ -145,7 +199,6 @@ small, .small-text {
 .content {
   position: relative;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.3);
   min-height: 100vh;
   padding: 0;
   width: 100%;
@@ -153,27 +206,59 @@ small, .small-text {
   margin: 0;
   border-radius: 0;
   box-shadow: none;
+  transition: background-color 0.5s ease;
+}
+
+.dark .content {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.light .content {
+  background: rgba(255, 255, 255, 0.1);
 }
 
 /* Ensure text is readable over the background */
-.content h1, .content h2, .content h3, .content p {
+.dark .content h1, .dark .content h2, .dark .content h3, .dark .content p {
   color: white;
+  text-shadow: none;
+}
+
+.light .content h1, .light .content h2, .light .content h3, .light .content p {
+  color: #333333;
   text-shadow: none;
 }
 
 /* Make project cards more visible over the background */
 .project-card, .experience-card, .techstack-card {
-  background: rgba(255, 255, 255, 0.95);
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
 }
 
-.project-card h3, .experience-card h3, .techstack-card h3 {
+.dark .project-card, .dark .experience-card, .dark .techstack-card {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.light .project-card, .light .experience-card, .light .techstack-card {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.dark .project-card h3, .dark .experience-card h3, .dark .techstack-card h3 {
   color: #333;
   text-shadow: none;
 }
 
-.project-card p, .experience-card p, .techstack-card p {
+.light .project-card h3, .light .experience-card h3, .light .techstack-card h3 {
+  color: #333;
+  text-shadow: none;
+}
+
+.dark .project-card p, .dark .experience-card p, .dark .techstack-card p {
+  color: #666;
+  text-shadow: none;
+}
+
+.light .project-card p, .light .experience-card p, .light .techstack-card p {
   color: #666;
   text-shadow: none;
 }
@@ -188,29 +273,50 @@ section {
 }
 
 .glass-card {
-  background: rgba(30, 30, 30, 0.7);
   border-radius: 18px;
   box-shadow: 0 8px 32px rgba(0,0,0,0.25);
   backdrop-filter: blur(8px);
-  border: 1.5px solid rgba(177, 108, 255, 0.18);
   padding: 2rem 1rem 1.5rem 2rem;
   margin-bottom: 2.5rem;
-  transition: box-shadow 0.2s, border 0.2s;
+  transition: box-shadow 0.2s, border 0.2s, background-color 0.5s ease;
 }
 
-.glass-card:hover {
+.dark .glass-card {
+  background: rgba(30, 30, 30, 0.7);
+  border: 1.5px solid rgba(177, 108, 255, 0.18);
+}
+
+.light .glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1.5px solid rgba(102, 126, 234, 0.18);
+}
+
+.dark .glass-card:hover {
   box-shadow: 0 12px 40px #b16cffaa;
   border: 1.5px solid #b16cff;
 }
 
+.light .glass-card:hover {
+  box-shadow: 0 12px 40px #667eeaaa;
+  border: 1.5px solid #667eea;
+}
+
 .section-title {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
-  color: #fff;
   margin-bottom: 2.5rem;
   letter-spacing: -0.02em;
   text-align: center;
-  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  transition: color 0.5s ease;
+}
+
+.dark .section-title {
+  color: #fff;
+}
+
+.light .section-title {
+  color: #333;
 }
 
 .compact-section {

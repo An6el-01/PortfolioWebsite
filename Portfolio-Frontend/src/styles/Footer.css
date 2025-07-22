@@ -1,0 +1,91 @@
+/* Footer Styles */
+.footer {
+  background: linear-gradient(135deg, rgba(20, 20, 30, 0.95) 0%, rgba(10, 10, 20, 0.98) 100%);
+  border-top: 1px solid rgba(177, 108, 255, 0.15);
+  padding: 3rem 3.5rem 2rem 3.5rem;
+  margin-top: 4rem;
+  position: relative;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.footer-title {
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+
+.footer-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(0.9rem, 1.2vw, 1rem);
+  color: #b16cff;
+  font-weight: 500;
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+
+
+
+.footer-copyright {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(0.8rem, 1vw, 0.9rem);
+  color: #888;
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .footer {
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    margin-top: 3rem;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  
+  .footer-section {
+    align-items: center;
+  }
+  
+
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 1.5rem 1rem 1rem 1rem;
+    margin-top: 2rem;
+  }
+  
+  .footer-content {
+    gap: 1rem;
+  }
+  
+
+} 

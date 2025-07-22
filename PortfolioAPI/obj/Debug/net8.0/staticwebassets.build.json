@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "i7XIHRqv0XxxrVKL/5ejqsxeOpKfHDb+41uT3YOF5ts=",
+  "Hash": "+1LRvPLipl14fNAWrFNTaJamMB1/1oRfNCbSBPIBCzA=",
   "Source": "PortfolioAPI",
   "BasePath": "_content/PortfolioAPI",
   "Mode": "Default",
@@ -547,6 +547,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\ReactNativeIcon.png"
+    },
+    {
+      "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\Sandler.png",
+      "SourceId": "PortfolioAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\",
+      "BasePath": "_content/PortfolioAPI",
+      "RelativePath": "images/Sandler.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Sandler.png"
     },
     {
       "Identity": "C:\\Users\\amsal\\OneDrive\\Escritorio\\Coding Projects\\PortfolioProject\\PortfolioAPI\\wwwroot\\images\\ShadowFoam-logo.png",

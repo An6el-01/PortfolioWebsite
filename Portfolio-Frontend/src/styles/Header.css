@@ -26,6 +26,14 @@
   color: #fff;
   text-transform: uppercase;
   user-select: none;
+  text-decoration: none;
+  transition: color 0.18s;
+  cursor: pointer;
+}
+
+.header-logo:hover {
+  color: #b16cff;
+  text-decoration: none;
 }
 
 .header-nav {

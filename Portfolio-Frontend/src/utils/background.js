@@ -1,11 +1,10 @@
 import React from 'react';
 import '../styles/background.css';
 
-const Background = () => {
+const Background = ({ isDarkMode = true }) => {
   return (
-    <div className="static-background">
-      <div className="stars"></div>
-      <div className="twinkling"></div>
+    <div className={`static-background ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
+      {!isDarkMode && <div className="clouds"></div>}
     </div>
   );
 };

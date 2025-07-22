@@ -24,61 +24,38 @@ namespace PortfolioAPI.Data
             {
                 new Project
                 {
-                    Name = "VIP Spooling",
-                    Description = "Custom form management system mobile app.",
+                    Name = "Document Management System",
+                    Organization = "VIP Spooling",
+                    Description = "As a freelancer, I developed a custom Document Management System mobile aplication for a client, using AWS and React Native. This solution provided the client with tools to manage sub-users, monitor invoice tickets, oversee their team, and curate document templates and pricing forms. Sub-users gained the ablity to access and edit their created forms, complete them offline, and quickly view available pricing plans, demonstrating my ability to interpret client needs and deliver tailored solutions.",
                     ImageUrl = "http://localhost:5015/images/MockUpVIP.jpeg",
                     RepositoryUrl = "https://github.com/An6el-01/VipSpooling-Mobile.git",
-                    TechStack = new string[] 
-                    { 
-                        "http://localhost:5015/images/TypeScript.png", 
-                        "http://localhost:5015/images/ReactNativeIcon.png",
-                        "http://localhost:5015/images/node.png",
-                        "http://localhost:5015/images/AWS.png" 
-                    },
+                    TechStack = "[\"http://localhost:5015/images/TypeScript.png\", \"http://localhost:5015/images/ReactNativeIcon.png\", \"http://localhost:5015/images/node.png\", \"http://localhost:5015/images/AWS.png\"]",
                 },
                 new Project {
-                    Name = "Shadow Foam",
-                    Description = "In house order management and manufacturing system.",
+                    Name = "Order Management System",
+                    Organization = "Shadow Foam",
+                    Description = "In my current role as a Software Developer, I led the design and development of a Order Management System, leveraging Next.js, Google Cloud, and Supabase. This platform optimized product manufacturing by optimizing the nesting of parts into foam sheets and generating CAD files for CNC machines, maximizing material resource usage. The system also featured an interface for packing optimization, product group management, sub-user administration, and inventory tracking, including stock levels and damage. This project was a great learning experience, as it allowed me to demonstrate my leadership in delivering a solution that improved operational efficiency and resource optimization.",
                     ImageUrl = "http://localhost:5015/images/MockUpSF.jpeg",
                     RepositoryUrl = "https://github.com/An6el-01/Cloud_Cut.git",
-                    TechStack = new string[] 
-                    {
-                        "http://localhost:5015/images/TypeScript.png",
-                        "http://localhost:5015/images/JavaScript.png",
-                        "http://localhost:5015/images/ReactIcon.png",
-                        "http://localhost:5015/images/node.png",
-                        "http://localhost:5015/images/supabase.png"
-                    }
+                    TechStack = "[\"http://localhost:5015/images/TypeScript.png\", \"http://localhost:5015/images/JavaScript.png\", \"http://localhost:5015/images/ReactIcon.png\", \"http://localhost:5015/images/node.png\", \"http://localhost:5015/images/supabase.png\"]"
                 },
                 new Project
                 {
-                    Name = "The Workout Library",
-                    Description = "A custom fitness program management system.",
+                    Name = "Workout Program Builder",
+                    Organization = "Experiential Learning (University of Chester)",
+                    Description = "During my experiential learning university module, I served as the lead frontend developer and head of client communication within a software development team, building a workout program building web application for a client using ASP.NET Core. This solution enabled the client to manage sub-users, schedule custom workout programs, monitor progress, and handle payments efficiently. Sub-uers benefited from access to a workout library with video demonstrations, flexible scheduling options, performance insights, and integrated subscription payments. This project was a great learning experience, as it allowed me to work with a real client and build a solution that met their needs.",
                     ImageUrl = "http://localhost:5015/images/MockUpWorkoutLibrary.jpeg",
                     RepositoryUrl = "https://github.com/An6el-01/WorkoutLibrary",
-                    TechStack = new string[]
-                    {
-                        "http://localhost:5015/images/HTML.png",
-                        "http://localhost:5015/images/CSS.png",
-                        "http://localhost:5015/images/C_sharp.png",
-                        "http://localhost:5015/images/ASP.png",
-                        "http://localhost:5015/images/Azure.png",
-                    },
+                    TechStack = "[\"http://localhost:5015/images/HTML.png\", \"http://localhost:5015/images/CSS.png\", \"http://localhost:5015/images/C_sharp.png\", \"http://localhost:5015/images/ASP.png\", \"http://localhost:5015/images/Azure.png\"]",
                 },
                 new Project
                 {
-                    Name = "Decentralized Control Panel",
-                    Description = "An IoT control panel mobile app.",
+                    Name = "IoT Gateway",
+                    Organization = "Dissertation Project",
+                    Description = "For my final year dissertation, I was motivated to create a budget-friendly solution for comprehensive smart home control, that allowed integration of both smart and traditional electrical devices. To achieve this, I designed and built an IoT Gateway, leveraging a Raspberry Pi 4 as the central hub and a React-Native mobile application for interaction. This system provided me with convenient remote control over my home appliances, while also showcasing valuable data that allowed me to monitor and optimize my energy consumption.",
                     ImageUrl = "http://localhost:5015/images/MockUpControlPanel.jpeg",
                     RepositoryUrl = "https://github.com/An6el-01/RaspberryPi-IoT",
-                    TechStack = new string[]
-                    {
-                        "http://localhost:5015/images/JavaScript.png",
-                        "http://localhost:5015/images/python.png",
-                        "http://localhost:5015/images/ReactNativeIcon.png",
-                        "http://localhost:5015/images/node.png",
-                        "http://localhost:5015/images/AWS.png",
-                    }
+                    TechStack = "[\"http://localhost:5015/images/JavaScript.png\", \"http://localhost:5015/images/python.png\", \"http://localhost:5015/images/ReactNativeIcon.png\", \"http://localhost:5015/images/node.png\", \"http://localhost:5015/images/AWS.png\"]"
                 }
             });
             context.SaveChanges();

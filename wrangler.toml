@@ -1,0 +1,5 @@
+name = "portfolio-project"
+compatibility_date = "2025-07-18"
+
+[site]
+bucket = "./Portfolio-Frontend/build" 
