@@ -2,4 +2,10 @@ name = "portfolio-project"
 compatibility_date = "2025-07-18"
 
 [site]
-bucket = "./Portfolio-Frontend/build" 
+bucket = "./Portfolio-Frontend/build"
+
+[env.production]
+name = "portfolio-project-prod"
+
+[env.staging]
+name = "portfolio-project-staging" 

@@ -6,6 +6,7 @@ import Projects from './components/Projects';
 import AboutMe from './components/AboutMe';
 import Hero from './components/Hero';
 import Footer from './components/Footer';
+import Contact from './components/Contact';
 import './App.css';
 
 function App() {
@@ -36,10 +37,11 @@ function App() {
         />
         <AboutMe isDarkMode={isDarkMode} />
         <Projects isDarkMode={isDarkMode} />
-        <Experience />
+        <Experience isDarkMode={isDarkMode} />
+        <Contact isDarkMode={isDarkMode} />
       </div>
       {/* Footer */}
-      <Footer />
+      <Footer isDarkMode={isDarkMode} />
     </div>
   );
 }

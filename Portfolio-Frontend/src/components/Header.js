@@ -93,48 +93,14 @@ const Header = ({ isDarkMode }) => {
               }`}>
                 Experience
               </a>
+              <a href="#contact" className={`transition-colors duration-300 text-sm font-medium uppercase tracking-wider ${
+                isDarkMode
+                  ? 'text-white/80 hover:text-white'
+                  : 'text-gray-700/80 hover:text-gray-900'
+                  }`}>
+                Contact
+              </a>
             </nav>
-            
-            {/* Social Icons
-            <div className="flex items-center space-x-4">
-              <a 
-                href="https://github.com/An6el-01" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                aria-label="GitHub"
-                className={`transition-colors duration-300 ${
-                  isDarkMode 
-                    ? 'text-white/80 hover:text-white' 
-                    : 'text-gray-700/80 hover:text-gray-900'
-                }`}
-              >
-                <FaGithub className="w-5 h-5" />
-              </a>
-              <a 
-                href="https://www.linkedin.com/in/%C3%A1ngel-salinas-25a15a22a/" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                aria-label="LinkedIn"
-                className={`transition-colors duration-300 ${
-                  isDarkMode 
-                    ? 'text-white/80 hover:text-white' 
-                    : 'text-gray-700/80 hover:text-gray-900'
-                }`}
-              >
-                <FaLinkedin className="w-5 h-5" />
-              </a>
-              <button 
-                onClick={handleOpen} 
-                aria-label="Contact" 
-                className={`transition-colors duration-300 p-2 rounded-full ${
-                  isDarkMode 
-                    ? 'text-white/80 hover:text-white hover:bg-white/10' 
-                    : 'text-gray-700/80 hover:text-gray-900 hover:bg-gray-900/10'
-                }`}
-              >
-                <FaEnvelope className="w-5 h-5" />
-              </button>
-            </div> */}
           </div>
         </div>
       </header>
